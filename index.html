@@ -46,7 +46,8 @@
             required>
             <br>
             <br>
-
+            
+            
             <label for="email">Email</label>
             <input 
             type="email" 
@@ -57,7 +58,7 @@
             required>
             <br>
             <br>
-
+            
             <label for="date">Service time</label>
             <input 
             type="date" 
@@ -77,12 +78,11 @@
                 <label for="no" class="yesSolved">No</label>
                 <input type="radio" id="no" name="Solved_From_First_Time" value="no">
             </div>
-            
             <br>
             
             <h3 style="color: aliceblue;">What do you think about the cost?</h3>
 
-            <select>
+            <select name="cost_rating">
                 <option value="good">Cheap</option>
                 <option value="Balanced">Balanced</option>
                 <option value="So Expensive">So Expensive</option>
@@ -90,8 +90,8 @@
             
             <br>
             <br>
-
-            <h3 style="color: aliceblue;">Can you rate the service and your satisfation out of 5?</h3>
+            
+             <h3 style="color: aliceblue;">Can you rate the service and your satisfaction out of 5?</h3>
 
             <div class="star-rating">
                 <input type="radio" id="sr-0-5" name="star-rating-0" value="5" />
@@ -111,8 +111,12 @@
             </div>
             
             <br>
-            <br>
+            <br> 
 
+            <label for="comment-box" style="justify-content: center;, display: flex;;">Any Comments</label>
+            <textarea id="comment-box" name="comments" rows="5" cols="50"></textarea>
+
+            <br>
 
             <button>Submit</button>
         </form>
