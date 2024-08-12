@@ -43,6 +43,10 @@ body::before {
     overflow-y: auto; 
 }
 
+.survey::-webkit-scrollbar {
+  display: none; 
+}
+
 label{
   color: aliceblue;
   display: flex;
@@ -135,6 +139,22 @@ button:hover {
   background-color: rgb(145, 127, 103);
 }
 
+#comment-box {
+  width: 90%; /* adjust the width to fit the card */
+  height: 100px; /* adjust the height to fit the card */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* add this to center horizontally */
+  display: flex;
+  flex-direction: column; /* add this */
+  justify-content: center;
+  align-items: center;
+  resize: none;
+}
+
+
 @media (max-width: 700px) {
   .survey {
     width: 80%;
@@ -144,5 +164,12 @@ button:hover {
 @media (max-width: 700px) {
   body::before {
     background-size: 130% 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .survey {
+    max-width: 700px; 
+    margin: 0px auto; 
   }
 }
